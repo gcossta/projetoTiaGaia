@@ -8,5 +8,6 @@ public class Executora {
         GaiaRobo umaGaiaRobo = new GaiaRobo();
 
         umaGaiaRobo.abrirChome();
+        umaGaiaRobo.acessarUmSite();
     }
 }

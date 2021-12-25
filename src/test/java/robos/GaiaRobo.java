@@ -4,10 +4,15 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GaiaRobo {
+
+    public ChromeDriver julioDriver;
+
     public void abrirChome() {
         WebDriverManager.chromedriver().setup();
-        ChromeDriver julioDriver = new ChromeDriver();
+        julioDriver = new ChromeDriver();
+    }
 
+    public void acessarUmSite() {
         julioDriver.get("http://juliodelima.com.br/taskit");
     }
 
