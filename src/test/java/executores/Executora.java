@@ -7,7 +7,8 @@ public class Executora {
     public static void main(String[] args) {
         GaiaRobo umaGaiaRobo = new GaiaRobo();
 
-        umaGaiaRobo.abrirChome();
         umaGaiaRobo.acessarUmSite();
+        umaGaiaRobo.fazerLogin();
+        umaGaiaRobo.lancarNota();
     }
 }
