@@ -17,12 +17,16 @@ public class GaiaRobo {
     }
 
     //Método: modificador + tipo de retorno + nome do método + ()
-    public void acessarUmSite() {
-        julioDriver.get("http://juliodelima.com.br/taskit");
+    public void acessarUmSiteChamado(String site) {
+        julioDriver.get(site);
     }
 
-    public void fazerLogin() {
-        System.out.println("Vou fazer login.");
+    public String pegarOTituloDaPagina(){
+        return julioDriver.getTitle();
+    }
+
+    public void fazerLogin(String login, String senha) {
+
     }
 
     public void lancarNota() {
